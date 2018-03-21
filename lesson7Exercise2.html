@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loops and Control</title>
+</head>
+<body>
+    <script>
+        var months = ['0','JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG',
+          'SEP','OCT','NOV','DEC'];
+        var message = "";
+        for (i in months)
+          if( i > 0 && i < 13) {
+            message += 'Month ' + i++ + ' is ' + months[i - 1] + '\n';
+        }
+        alert(message);
+    </script>
+</body>
+</html>
